@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="res/css/materialize.min.css">
+    <link rel="stylesheet" href="res/css/style.css">
+
+    <title>Sport 360</title>
+</head>
+<body>
+<nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Un Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Sport 360&deg;</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+
+        <h1 class="header center pink-text">At vero eos et accusamus</h1>
+
+        <div class="row center">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="res/img/slides/1.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Nam libero tempore!</h3>
+                            <h5 class="light grey-text text-lighten-3">omnis voluptas assumenda est.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="res/img/slides/2.jpg"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Et harum quidem rerum facilis est</h3>
+                            <h5 class="light grey-text text-lighten-3">Itaque earum rerum hic tenetur a sapiente delectus.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="res/img/slides/3.jpg"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Sed ut perspiciatis unde omnis iste natus</h3>
+                            <h5 class="light grey-text text-lighten-3">eos qui ratione voluptatem sequi nesciunt.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="res/img/slides/4.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Ut enim ad minima veniam</h3>
+                            <h5 class="light grey-text text-lighten-3"> non numquam eius modi tempora incidunt .</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row center">
+            <a href="http://materializecss.com/getting-started.html" id="download-button"
+               class="btn-large waves-effect waves-light pink">Empez&aacute; Ahora</a>
+        </div>
+        <br><br>
+
+    </div>
+</div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="res/js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slider({full_width: true});
+    });
+</script>
+</body>
+</html>

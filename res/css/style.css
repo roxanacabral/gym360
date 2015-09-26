@@ -1,0 +1,12 @@
+#logo-container {
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    background-size: 150px 150px;
+    background-position: 0px -35px;
+    height: 100%;
+}
+
+.caption h3, .caption h5 {
+    text-shadow: 2px 1px #3d3d3d;
+}
