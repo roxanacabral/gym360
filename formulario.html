@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title> CONTACTO </title>
-    <link rel="stylesheet" media="screen" href="styles.css" >
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="res/css/materialize.min.css">
+    <link rel="stylesheet" href="res/css/style.css">
 
+    <title>Contacto - Sport 360</title>
 </head>
-
 <body>
-     <form class="contact_form" action="" method="post" name="contact_form"></form>
+<nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Contacto</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Un Link</a></li>
+        </ul>
 
-     <ul>
-         <li>
-             <h2>CONTACTO</h2>
-
-         </li>
-     </ul>
-
-         <li>
-             <label for="nombre">Nombre:</label>
-             <input type="text" name="nonbre"/><br><br>
-         </li>
-
-
-
-     <li>
-         <label for="Telefono">Telefono:</label>
-         <input type="text" name="telefono"  size="15" maxlength="15"/> <br><br>
-
-     </li>
-
-     <li>
-         <label for="email">Email:</label>
-         <input type="text" name="email" placeholder="john_doe@example.com"/>
-         <span class="form_hint"> </span><br><br>
-     </li>
-
-     <li>
-         <label for="mensaje">Mensaje:</label>
-         <textarea name="coment" cols="40" rows="6"></textarea><br><br>
-
-     </li>
-
-         <button class="submit" type="submit"> Enviar </button><br><br>
-
-
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Sport 360&deg;</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <div class="row">
+            <form class="col s8 z-depth-2">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Nombre</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Tel&eacute;fono</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensaje</label>
+                    </div>
+                </div>
+                <div class="row right-align">
+                    <div class="input-field col s12">
+                        <button class="btn waves-effect waves-light pink lighten-2" type="submit" name="action">
+                            Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="col s4">
+                <img src="res/img/contactenos.png" alt="" class="responsive-img">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="res/js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slider({full_width: true});
+    });
+</script>
 </body>
 </html>
